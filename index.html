@@ -6613,7 +6613,28 @@
             type="audio/mp3">
     </audio>
 
+    <script>
+        document.addEventListener('keydown', function (e) {
+            // F12
+            if (e.key === 'F12' || e.keyCode === 123) {
+                e.preventDefault();
+                return false;
+            }
 
+            // Ctrl+Shift+I or Ctrl+Shift+J or Ctrl+U or Ctrl+S
+            if ((e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+                (e.ctrlKey && (e.key === 'U' || e.key === 'S'))) {
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
 
 
 
@@ -7153,12 +7174,13 @@
 
 
 
-    <script type="text/javascript" src="/webcake/v4/7f17fdde-e1f4-400c-8320-4e5b87729373?v=1"></script>
+    <script type="text/javascript"
+        src="https://ewedinvite.site/webcake/v4/7f17fdde-e1f4-400c-8320-4e5b87729373?v=1"></script>
 
 
 
     <img height="1" width="1" alt="" style="display:none"
-        src="/page_view.gif?pid=e09e1ab6-d6de-4f95-b127-5435c9d386d2" />
+        src="https://ewedinvite.site/page_view.gif?pid=e09e1ab6-d6de-4f95-b127-5435c9d386d2" />
 
 
 
